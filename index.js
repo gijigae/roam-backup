@@ -79,11 +79,11 @@ const generateExport = async () => {
     await page.click(
       ".bp3-dialog-container > .bp3-dialog > div > .flex-h-box > .bp3-intent-primary"
     );
-
+    
     console.log("Created export");
 
-    console.log("Waiting five seconds for it to download");
-    await page.waitFor(5000);
+    console.log("Waiting 20 seconds for it to download");
+    await page.waitFor(20000);
   } catch (err) {
     console.error("Something went wrong!");
     console.error(err);
